@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MPIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="curriculum.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<body>
+
+    <!-- Secondary Header (Announcements & Quick Links) -->
+    <div class="secondary-header" id="secondaryHeader">
+        <div class="quick-links">
+            <a href="mailto:henrymillsdel@gmail.com"><i class="fas fa-envelope"></i> motherprovidenciasch@gmail.com</a>
+            <a href="tel:+233555116438"><i class="fas fa-phone"></i> 0207563043 / 0551111186</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> denta, New Legon(Rosa - Rosa)</a>
+            <a href="#"><i class="fas fa-clock"></i> 8:00am - 4:00pm (Mon-Fri)</a>
+        </div>
+        <div class="social-media">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <a href="#" id="searchLink"><i class="fas fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Header (Primary Navigation) -->
+    <header class="main-header" id="mainHeader">
+        <div class="logo">
+            <img src="img/mlogo.png" alt="School Logo" />
+            <h2>Mother Providencia International School</h2>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="../home.html/index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-info-circle"></i> About Us +</a>
+                    <ul class="submenu">
+                        <li><a href="../head/head.html">Headmistress Message</a></li>
+                        <li><a href="../about us/about.html">Our History</a></li>
+                        <li><a href="../Academics/bpard/board.html">School Management</a></li>
+                        <li><a href="../student/std.html">Student Leadership</a></li>
+                        <li><a href="../School anthem/anthem.html">School Anthem/Hymn</a></li>
+                        <li><a href="../Hall-of-fame/hall-of-fame.html">Alumni / Hall Of Fame</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-book"></i> Academics +</a>
+                    <ul class="submenu">
+                        <li><a href="../Academics/curriculum.html">Curriculum</a></li>
+                        <li><a href="../staff/staff.html">Staff / Department</a></li>
+                        <li><a href="../Academics/presch/presch.html">Pre-School</a></li>
+                        <li><a href="../Academics/primary/primary.html">Primary</a></li>
+                        <li><a href="../Academics/jhs/jhs.html">JHS</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-newspaper"></i> News & Events +</a>
+                    <ul class="submenu">
+                        <li><a href="#">News and Updates</a></li>
+                        <li><a href="#">Archived News</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-user"></i> Admissions +</a>
+                    <ul class="submenu">
+                        <li><a href="../admission/admission.html">Admission Procedure</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="../pta/facility.html"><i class="fas fa-school"></i> Facilities </a>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-heart"></i> Activities +</a>
+                    <ul class="submenu">
+                        <li><a href="#">Spiritual & Social Guidance</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#"><i class="fas fa-image"></i> Gallery</a>
+                    <ul class="submenu">
+                        <li><a href="../gallery/gallery.html">Photo Gallery</a></li>
+                        <li><a href="../gallery/gallery.html">Video Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact/contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="hero">
+        <div class="hero-slider">
+            <div class="arrow prev">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+            <div class="arrow next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+
+            <!-- Slider-wraper-start -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/slide-1.jpg" alt="Slide Image" class="slide-img" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-3.jpg" alt="Slide Image" class="slide-img" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-4.jpg" alt="Slide Image" class="slide-img" />
+                    </div>
+                </div>
+            </div>
+            <!-- Slider-wraper-end -->
+
+            <!-- Slider-controler-start -->
+            <div class="slider-controler"></div>
+            <!-- Slider-controler-end -->
+        </div>
+    </section>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <!-- ANIMATED TEXT UNDER HEADER -->
+    <section class="animated-text-section">
+        <h2 class="animated-text" data-text="CURRICULUM...">CURRICULUM...</h2>
+    </section>
+
+
+    <div style="background-color: #3610a0; padding: 10px;">
+        <marquee scrollamount="5" width="100%" style="color: white;">
+            “Education is the most powerful weapon which you can use to change the world.” – Nelson Mandela
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            📅 2025 Admissions Now Open! Enroll Today and Join the Journey of Excellence.
+        </marquee>
+    </div>
+
+
+
+    <!-- Academic Year Filter Section -->
+    <section class="academic-section">
+        <h2 class="academic-title">Download Academic Term Files</h2>
+        <div class="academic-tabs">
+            <button class="academic-tab" data-year="2024">2024/2025 Academic Year</button>
+            <button class="academic-tab" data-year="2025">2025/2026 Academic Year</button>
+            <button class="academic-tab" data-year="2026">2026/2027 Academic Year</button>
+        </div>
+
+        <div class="academic-rows">
+            <!-- Term rows will be injected here -->
+        </div>
+    </section>
+
+
+
+
+    <!-- TIMELINE SECTION     -->
+    <div class="wrapper">
+        <div class="center-line">
+            <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+        </div>
+        <div class="row row-1">
+            <section>
+                <i class="icon fas fa-home"></i>
+                <div class="details">
+                    <span class="title">PRE-SCHOOL</span>
+                </div>
+                <div class="subjects-container">
+                    <div class="subject-item"> Language and Literacy</div>
+                    <div class="subject-item">Mathematics</div>
+                    <div class="subject-item">Environmental Studies</div>
+                    <div class="subject-item">Creative Arts </div>
+                    <div class="subject-item">Physical Developmen </div>
+                    <div class="subject-item">Personal and Social Development</div>
+                </div>
+
+                <div class="bottom">
+                    <a href="#">Read more</a>
+                    <i>- GES Curriculums</i>
+                </div>
+            </section>
+        </div>
+        <div class="row row-2">
+            <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                    <span class="title">LOWER PRIMARY</span>
+
+                </div>
+                <div class="subjects-container">
+                    <div class="subject-item">English Language</div>
+                    <div class="subject-item">Mathematics</div>
+                    <div class="subject-item">Science</div>
+                    <div class="subject-item">Ghanaian Language</div>
+                    <div class="subject-item">Our World Our People</div>
+                    <div class="subject-item">Creative Arts</div>
+                    <div class="subject-item">History</div>
+                    <div class="subject-item">Religious and Moral Education</div>
+                    <div class="subject-item">Physical Education</div>
+                </div>
+                <div class="bottom">
+                    <a href="#">Read more</a>
+                    <i>- GES Curriculum</i>
+                </div>
+            </section>
+        </div>
+        <div class="row row-1">
+            <section>
+                <i class="icon fas fa-rocket"></i>
+                <div class="details">
+                    <span class="title">UPPER PRIMARY</span>
+
+                </div>
+                <div class="subjects-container">
+                    <div class="subject-item">English Language</div>
+                    <div class="subject-item">Mathematics</div>
+                    <div class="subject-item">Science</div>
+                    <div class="subject-item">Ghanaian Language</div>
+                    <div class="subject-item">Our World Our People</div>
+                    <div class="subject-item">Creative Arts</div>
+                    <div class="subject-item">History</div>
+                    <div class="subject-item">Religious and Moral Education</div>
+                    <div class="subject-item">Physical Education</div>
+                    <div class="subject-item">Computing</div>
+                    <div class="subject-item">French (introduced at this level)</div>
+                </div>
+                <div class="bottom">
+                    <a href="#">Read more</a>
+                    <i>- GES Curriculum</i>
+                </div>
+            </section>
+        </div>
+        <div class="row row-2">
+            <section>
+                <i class="icon fas fa-globe"></i>
+                <div class="details">
+                    <span class="title">JUNIOR HIGH SCHOOL</span>
+
+                </div>
+                <div class="subjects-container">
+                    <div class="subject-item">English Language</div>
+                    <div class="subject-item">Mathematics</div>
+                    <div class="subject-item">Integrated Science</div>
+                    <div class="subject-item">Social Studies</div>
+                    <div class="subject-item">Religious and Moral Education</div>
+                    <div class="subject-item">Career Technology</div>
+                    <div class="subject-item">Computing</div>
+                    <div class="subject-item">Creative Arts and Design</div>
+                    <div class="subject-item">Ghanaian Language</div>
+                    <div class="subject-item">Physical Education and Health</div>
+                    <div class="subject-item">French (optional)</div>
+                </div>
+                <div class="bottom">
+                    <a href="#">Read more</a>
+                    <i>- GES Curriculum</i>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose">
+        <div class="text-content">
+            <h2>Why Choose Us?</h2>
+            <div class="feature"><i class="icon">✔</i> High-quality education</div>
+            <div class="feature"><i class="icon">✔</i> Experienced teachers</div>
+            <div class="feature"><i class="icon">✔</i> Modern facilities</div>
+            <div class="feature"><i class="icon">✔</i> Strong moral values</div>
+            <div class="feature"><i class="icon">✔</i> Supportive environment</div>
+        </div>
+
+        <div id="image-slider">
+            <img src="img/cta-left-image.png" alt="Image 1">
+            <img src="img/about-left-image.png" alt="Image 2">
+            <img src="img/banner-right-image.png" alt="Image 3">
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER  -->
+    <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+
+                <div class="single-footer logo-footer">
+                    <img src="img/logo.jpg" alt="School Logo" class="footer-logo">
+                    <!-- replace img path and filename accordingly -->
+
+                    <div class="single-footer footer-social-container">
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-footer">
+                    <h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="/home.html/index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="/home.html/index.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="/admission/admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                        <li><a href="/gallery/gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="single-footer">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/home.html/index.html"><i class="fas fa-chevron-right"></i> News & Updates</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pre-School</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Primary</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> JHS</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Our History</a></li>
+                    </ul>
+                </div>
+
+                <div class="single-footer">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="/contact/contact.html"><i class="fas fa-map-marker-alt"></i> Adenta, New Legon
+                                (Rosa - Rosa)</a></li>
+                        <li><a href="tel:0207563043"><i class="fas fa-mobile-alt"></i> 0207563043</a></li>
+                        <li><a href="tel:0551111186"><i class="fas fa-mobile-alt"></i> 0551111186</a></li>
+                        <li><a href="mailto:motherprovidenciasch@gmail.com"><i class="far fa-envelope"></i>
+                                motherprovidenciasch@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy">
+                <p>&copy; 2020 all rights reserved</p>
+                <p class="powered-by">Powered by <a href="https://innovexlabs.com" target="_blank">InnovexLabs</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const menu = document.querySelector(".menu");
+            const submenuParents = document.querySelectorAll(".has-submenu > a");
+
+            // Toggle menu for mobile view
+            menuToggle.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                document.body.classList.toggle("menu-open");
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                    menu.classList.remove("active");
+                    document.body.classList.remove("menu-open");
+                }
+            });
+
+            // Toggle submenus on mobile
+            submenuParents.forEach(parent => {
+                parent.addEventListener("click", function (event) {
+                    if (window.innerWidth <= 768) {  // Only for mobile
+                        event.preventDefault();
+                        this.nextElementSibling.classList.toggle("submenu-active");
+                    }
+                });
+            });
+
+            // Sticky header with secondary header hide/show
+            window.addEventListener("scroll", function () {
+                const secondaryHeader = document.getElementById("secondaryHeader");
+                const mainHeader = document.getElementById("mainHeader");
+
+                if (window.scrollY > 100) {
+                    secondaryHeader.style.top = "-50px";
+                    mainHeader.classList.add("fixed");
+                } else {
+                    secondaryHeader.style.top = "0";
+                    mainHeader.classList.remove("fixed");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function openMenu() {
+            document.querySelector(".mobile-menu").classList.add("active");
+        }
+
+        function closeMenu() {
+            document.querySelector(".mobile-menu").classList.remove("active");
+        }
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            let submenu = event.target.nextElementSibling;
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+        }
+    </script>
+
+
+    <!-- OUR FACILITIES SLIDER -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.querySelector(".facilities-track");
+            const slides = document.querySelectorAll(".facility-slide");
+            const prevBtn = document.querySelector(".facilities-prev");
+            const nextBtn = document.querySelector(".facilities-next");
+            const dotsContainer = document.querySelector(".facilities-dots");
+
+            let currentIndex = 0;
+            let slidesToShow = window.innerWidth >= 769 ? 3 : 1;
+            const totalSlides = slides.length;
+
+            function updateTrackTransform() {
+                const slideWidth = 100 / slidesToShow;
+                track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+            }
+
+            function updateDots() {
+                document.querySelectorAll(".facilities-dot").forEach((dot, i) => {
+                    dot.classList.toggle("active", i === currentIndex);
+                });
+            }
+
+            function createDots() {
+                dotsContainer.innerHTML = "";
+                const dotCount = Math.ceil(totalSlides / slidesToShow);
+                for (let i = 0; i < dotCount; i++) {
+                    const dot = document.createElement("span");
+                    dot.classList.add("facilities-dot");
+                    if (i === 0) dot.classList.add("active");
+                    dot.addEventListener("click", () => {
+                        currentIndex = i;
+                        updateTrackTransform();
+                        updateDots();
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            function nextSlide() {
+                const maxIndex = Math.ceil(totalSlides / slidesToShow) - 1;
+                currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+                updateTrackTransform();
+                updateDots();
+            }
+
+            function prevSlide() {
+                const maxIndex = Math.ceil(totalSlides / slidesToShow) - 1;
+                currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+                updateTrackTransform();
+                updateDots();
+            }
+
+            function handleResize() {
+                slidesToShow = window.innerWidth >= 769 ? 3 : 1;
+                currentIndex = 0;
+                createDots();
+                updateTrackTransform();
+            }
+
+            // Initial setup
+            createDots();
+            updateTrackTransform();
+
+            // Listeners
+            nextBtn.addEventListener("click", nextSlide);
+            prevBtn.addEventListener("click", prevSlide);
+            window.addEventListener("resize", handleResize);
+
+            // Optional autoplay
+            setInterval(nextSlide, 3000);
+        });
+    </script>
+
+    <!-- VIDEO SECTION FOR TOUR -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('myCustomVideo');
+            const playBtn = document.getElementById('customPlayBtn');
+            const progressBar = document.getElementById('progressBar');
+            const toggleMenu = document.getElementById('toggleMenu');
+            const shareOptions = document.getElementById('shareOptions');
+
+            playBtn.addEventListener('click', () => {
+                video.play();
+                playBtn.style.display = 'none';
+            });
+
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    playBtn.style.display = 'none';
+                } else {
+                    video.pause();
+                    playBtn.style.display = 'block';
+                }
+            });
+
+            video.addEventListener('timeupdate', () => {
+                const value = (100 / video.duration) * video.currentTime;
+                progressBar.value = value;
+            });
+
+            progressBar.addEventListener('input', () => {
+                video.currentTime = video.duration * (progressBar.value / 100);
+            });
+
+            toggleMenu.addEventListener('click', () => {
+                shareOptions.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <!-- testimonial SECTION   -->
+    <script>
+        const track = document.querySelector('.testimonial-track');
+        const prevBtn = document.querySelector('.testimonial-prev');
+        const nextBtn = document.querySelector('.testimonial-next');
+        let index = 0;
+
+        function updateCarousel() {
+            const width = document.querySelector('.testimonial-carousel').offsetWidth;
+            track.style.transform = `translateX(-${index * width}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const total = document.querySelectorAll('.testimonial-card').length;
+            index = (index + 1) % total;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const total = document.querySelectorAll('.testimonial-card').length;
+            index = (index - 1 + total) % total;
+            updateCarousel();
+        });
+
+        // Auto-scroll every 6 seconds
+        setInterval(() => {
+            const total = document.querySelectorAll('.testimonial-card').length;
+            index = (index + 1) % total;
+            updateCarousel();
+        }, 6000);
+
+        // Adjust on window resize
+        window.addEventListener('resize', updateCarousel);
+    </script>
+
+
+    <!-- Scrolling button    -->
+    <button id="scrollTopBtn">&#8679;</button>
+
+    <!-- BANNER Slider JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+            const nextBtn = document.querySelector(".next");
+            const prevBtn = document.querySelector(".prev");
+            const dotsContainer = document.querySelector(".slider-controler");
+
+            let currentIndex = 0;
+            let slideInterval;
+
+            // Generate dots
+            slides.forEach((_, i) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                if (i === 0) dot.classList.add("active");
+                dot.addEventListener("click", () => {
+                    currentIndex = i;
+                    updateSlider();
+                    resetAutoSlide();
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const updateSlider = () => {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                document.querySelectorAll(".dot").forEach((dot, i) => {
+                    dot.classList.toggle("active", i === currentIndex);
+                });
+            };
+
+            const nextSlide = () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlider();
+            };
+
+            const prevSlide = () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateSlider();
+            };
+
+            const startAutoSlide = () => {
+                slideInterval = setInterval(nextSlide, 5000);
+            };
+
+            const resetAutoSlide = () => {
+                clearInterval(slideInterval);
+                startAutoSlide();
+            };
+
+            nextBtn.addEventListener("click", () => {
+                nextSlide();
+                resetAutoSlide();
+            });
+
+            prevBtn.addEventListener("click", () => {
+                prevSlide();
+                resetAutoSlide();
+            });
+
+            // Initialize
+            updateSlider();
+            startAutoSlide();
+        });
+    </script>
+</body>
+
+<!-- ACADEMIC TERM FILES     -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".academic-tab");
+        const rowsContainer = document.querySelector(".academic-rows");
+
+        const termData = {
+            2024: {
+                first: "term1-2024.pdf",
+                second: "term2-2024.pdf",
+                third: "term3-2024.pdf",
+            },
+            2025: {
+                first: "term1-2025.pdf",
+                second: "term2-2025.pdf",
+                third: "term3-2025.pdf",
+            },
+            2026: {
+                first: "term1-2026.pdf",
+                second: "term2-2026.pdf",
+                third: "term3-2026.pdf",
+            },
+        };
+
+        tabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+                tabs.forEach((t) => t.classList.remove("active"));
+                this.classList.add("active");
+
+                const year = this.dataset.year;
+                const terms = termData[year];
+
+                rowsContainer.innerHTML = `
+                <div class="academic-term-row">
+                  ${Object.entries(terms)
+                        .map(
+                            ([term, file]) => `
+                      <div class="academic-term">
+                        <div class="academic-term-title">${term
+                                    .charAt(0)
+                                    .toUpperCase() + term.slice(1)} Term</div>
+                        <a href="${file}" download>
+                          <button class="academic-download-btn">Download PDF</button>
+                        </a>
+                      </div>
+                    `
+                        )
+                        .join("")}
+                </div>
+              `;
+            });
+        });
+    });
+</script>
+
+<script>
+    function downloadPDF(filePath) {
+        const link = document.createElement("a");
+        link.href = filePath;
+        link.download = filePath.split("/").pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    function showMessage(message) {
+        alert(message);
+    }
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Intersection Observer for animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add("show");
+                    }, index * 300);
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const hiddenElements = document.querySelectorAll(".hidden, #why-choose");
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        // Slider functionality for mobile
+        const images = document.querySelectorAll("#image-slider img");
+        let current = 0;
+
+        function showSlide(index) {
+            images.forEach((img, i) => {
+                img.classList.remove("active");
+                if (i === index) img.classList.add("active");
+            });
+        }
+
+        function startSlider() {
+            setInterval(() => {
+                current = (current + 1) % images.length;
+                showSlide(current);
+            }, 3000); // change slide every 3 seconds
+        }
+
+        // Only run slider on mobile
+        if (window.innerWidth <= 768) {
+            showSlide(current); // Show first image
+            startSlider();
+        }
+    });
+</script>
+
+
+<!--IMAGE SLIDER FOR WHY CHOOSE US -->
+<script>
+    let index = 0;
+    const images = document.querySelectorAll('#image-slider img');
+    function changeImage() {
+        images.forEach(img => img.style.opacity = '0');
+        images[index].style.opacity = '1';
+        index = (index + 1) % images.length;
+    }
+    setInterval(changeImage, 3000);
+</script>
+
+
+
+
+<!-- BOTTOM SCROLLING BUTTON Section -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        // Debugging: Log if button is found
+        if (scrollTopBtn) {
+            console.log("Scroll-to-Top button found.");
+        } else {
+            console.error("Scroll-to-Top button NOT found!");
+        }
+
+        // Show button when scrolling
+        window.onscroll = function () {
+            console.log("Scrolling..."); // Debugging log
+
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                console.log("Showing button");
+                scrollTopBtn.style.display = "block";
+            } else {
+                console.log("Hiding button");
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top on button click
+        scrollTopBtn.addEventListener("click", function () {
+            console.log("Button clicked - scrolling to top.");
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
+</script>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
